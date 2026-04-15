@@ -65,6 +65,7 @@
     nav {
       position: fixed;
       top: 0;
+      left: 0;
       width: 100%;
       z-index: 200;
       display: flex;
@@ -2108,8 +2109,10 @@
     }
 
     @media (max-width: 768px) {
-      nav { padding: 12px 20px !important; }
-      nav.scrolled { padding: 10px 20px !important; }
+      nav { padding: 12px 18px !important; }
+      nav.scrolled { padding: 10px 18px !important; }
+      .nav-logo { font-size: 1.6rem; }
+      
       .nav-links {
         position: fixed; top: 0; right: 0; width: 280px; height: 100vh;
         background: #fff; flex-direction: column; align-items: flex-start; justify-content: center;
@@ -2122,50 +2125,46 @@
       .nav-toggle { display: flex; }
       .nav-cta { display: none; }
       
-      .hero-content { padding: 0 20px 60px; text-align: center; max-width: 100%; }
-      .hero-badge { padding: 5px 12px; margin-bottom: 20px; }
-      .hero-badge span { font-size: 0.6rem; letter-spacing: 0.1em; }
+      .hero-content { padding: 0 18px 60px; text-align: center; max-width: 100%; }
+      .hero-badge { padding: 6px 14px; margin-bottom: 20px; font-size: 0.65rem; }
       .hero-h1 { font-size: clamp(2.1rem, 9vw, 3.2rem); margin-bottom: 20px; }
       .hero-sub { font-size: 0.9rem; line-height: 1.6; margin-bottom: 30px; margin-left: auto; margin-right: auto; }
-      .hero-btns { gap: 10px; flex-direction: column; width: 100%; max-width: 280px; margin: 0 auto; }
-      .btn-hp, .btn-hg { padding: 12px 20px; font-size: 0.7rem; width: 100%; text-align: center; }
+      .hero-btns { gap: 12px; flex-direction: column; width: 100%; max-width: 280px; margin: 0 auto; }
+      .btn-hp, .btn-hg { padding: 14px 25px; font-size: 0.72rem; width: 100%; text-align: center; }
       .hero-floats, .scroll-ind { display: none; }
       
       .about { grid-template-columns: 1fr; }
       .about-vis { height: 320px; }
-      .about-content { padding: 40px 25px; clip-path: none; text-align: center; }
+      .about-content { padding: 40px 18px; clip-path: none; text-align: center; }
       .about .eyebrow { justify-content: center; }
       .about-feats { grid-template-columns: 1fr; gap: 12px; }
       .about-feat { justify-content: center; }
       
-      .numbers { grid-template-columns: repeat(2, 1fr); padding: 50px 20px; gap: 30px 10px; }
+      .numbers { grid-template-columns: repeat(2, 1fr); padding: 50px 18px; gap: 30px 10px; }
       .num-item { border-right: none; text-align: center; }
       .num-val { font-size: 2.2rem; }
-      .num-lbl { font-size: 0.65rem; }
       
       .sec-hd { flex-direction: column; align-items: center; text-align: center; gap: 10px; margin-bottom: 40px; }
-      .link-all { margin-top: 5px; font-size: 0.75rem; }
+      .link-all { margin-top: 10px; font-size: 0.8rem; }
       
       .portfolio, .process, .testimonials, .blog { padding: 60px 20px; }
-      .filter-bar { justify-content: center; gap: 6px; }
-      .fbtn { padding: 7px 16px; font-size: 0.68rem; }
+      .filter-bar { justify-content: center; gap: 8px; }
+      .fbtn { padding: 8px 18px; font-size: 0.7rem; }
       
       .featured { grid-template-columns: 1fr; }
-      .feat-imgs { height: 280px; }
-      .feat-content { padding: 50px 25px; text-align: center; }
+      .feat-imgs { height: 300px; }
+      .feat-content { padding: 50px 20px; text-align: center; }
       .feat-tag { align-self: center; }
       .feat-meta { grid-template-columns: repeat(2, 1fr); gap: 20px; text-align: left; }
-      .btn-gw { align-self: center; padding: 12px 28px; font-size: 0.7rem; }
+      .btn-gw { align-self: center; }
       
       .rooms { padding: 60px 0 60px 20px; }
       .rooms-hd { padding-right: 20px; flex-direction: column; align-items: center; text-align: center; gap: 15px; }
       
       .test-grid { grid-template-columns: 1fr; gap: 15px; }
-      .test-card { padding: 30px 25px; }
+      .test-card { padding: 30px 20px; }
       
-      .blog-grid { gap: 15px; }
-      
-      .contact-left, .contact-right { padding: 50px 25px; }
+      .contact-left, .contact-right { padding: 50px 20px; }
       .form-submit { width: 100%; align-self: stretch; }
       
       .footer-top { grid-template-columns: 1fr; gap: 40px; }
@@ -2174,13 +2173,14 @@
 
     @media (max-width: 480px) {
       .hero-h1 { font-size: 2rem; }
+      .hero-btns { max-width: 100%; }
+      .nav-links { width: 100%; }
       .numbers { grid-template-columns: 1fr; }
       .svc-row1, .svc-row2 { grid-template-columns: 1fr; }
       .msnry { columns: 1; }
       .proc-timeline { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
-      .room-card { flex: 0 0 240px; height: 350px; }
-      .nav-links { width: 100%; }
+      .room-card { flex: 0 0 260px; height: 380px; }
     }
   </style>
 </head>
